@@ -1,0 +1,39 @@
+
+body {
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
+}
+
+.container{
+background-color: #eee;
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-evenly; /* repartir les éléments de façon légal */
+
+}
+
+.item{
+    opacity: 1;
+    cursor: pointer;
+    background-color: #7371ea;
+    border:5px solid #443ea0;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 30px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item:hover{
+    opacity: 0.7;
+}

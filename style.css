@@ -1,0 +1,35 @@
+
+
+
+
+
+body, html{
+    line-height: 1.8;
+    padding: 0;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header, .content, .sidebar, .footer{
+    padding: 26px 34px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #2b2024;
+}
+
+.content{
+    background-color: #FD0054;
+}
+
+.sidebar{
+    background-color: #A80038;
+    color: white;
+}
+
+.footer{
+    background-color: #2b2024;
+    color: white;
+}
