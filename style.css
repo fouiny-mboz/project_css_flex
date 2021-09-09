@@ -2,7 +2,10 @@
 
 
 
-
+body{
+    display: flex;
+    flex-wrap: wrap; /* remet les élément en dessous lorsque leurs dépasse */
+}
 body, html{
     line-height: 1.8;
     padding: 0;
@@ -32,4 +35,46 @@ body, html{
 .footer{
     background-color: #2b2024;
     color: white;
+}
+
+.footer{
+    flex-basis: 100%;
+}
+
+.header{
+    flex-basis: 100%;
+}
+
+.content{
+    flex-basis: 50%;
+}
+
+.sidebar{
+    flex-basis: 25%;
+}
+
+/* jquery pour les écrans plus petits pour permettre un bon affichage et les ordonner tels que voulu*/
+
+@media  screen and (max-width: 750px) {
+    .content{
+        flex-basis: 100%;
+
+    }
+
+    .sidebar{
+        flex-basis: 50%;
+        order:1
+    }
+
+    .footer{
+        order: 2;
+    }
+}
+
+
+@media  screen and (max-width: 500px) {
+    
+    .sidebar{
+        flex-basis: 500%;
+    }
 }
